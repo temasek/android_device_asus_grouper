@@ -85,5 +85,6 @@ BOARD_RECOVERY_SWIPE := true
 
 TARGET_KERNEL_SOURCE := kernel/asus/grouper
 TARGET_KERNEL_CONFIG := cyanogenmod_grouper_defconfig
+ARM_EABI_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin
 
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
