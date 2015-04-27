@@ -24,6 +24,11 @@ PRODUCT_PROPERTY_OVERRIDES := \
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/grouper/overlay
 
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.ota.romname=temasek-grouper \
+    ro.ota.version=$(shell date +%F | sed s@-@@g) \
+    ro.ota.manifest=http://temasek.rajasthanautoworks.in/ota/grouper.xml
+
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/grouper/device-common.mk)
 
